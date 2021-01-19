@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+#content {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(221, 213, 213);
+    border-bottom: 1px solid #c23616;
+}
+
+
+header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 1em;
+    padding: 1em;
+    color: rgb(241, 232, 241);
+}
+
+header .logo {
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 50%;
+    
+    width: 3em;
+}
+
+header nav {
+    width: 50%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: "Quattrocento", sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+
+footer {
+    width: 100%;
+
+    font-size: .8em;
+    color: rgb(202, 202, 202);
+
+    position: fixed;
+    bottom: 0.7em;
+
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    width: 100%;
+    height: 62vh;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10em;
+}
+
+.home section h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 4em;
+
+    color: rgb(236, 236, 236);
+}
+
+.menu {
+    font-family: "Quattrocento", sans-serif;
+
+    width: 50%;
+    height: 70vh;
+
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 700px) {
+    .menu {
+        width: 90%;
+        height: 65vh;
+    }
+}
+
+.items p, .prices p{
+    font-size: 2em;
+    margin-top: 2em;
+
+    color: #f5f6fa;
+    border-radius: 2em;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items p {
+    width: 100%;
+}
+
+.contact {
+    width: 100%;
+    height: 50vh;
+
+    font-family: "Quattrocento", sans-serif;
+
+    position: absolute;
+    bottom: 10em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact .info {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+
+.contact .info p{
+    color: #f5f6fa;
+
+    margin: 1em;
+
+    font-size: 2em;
+}
