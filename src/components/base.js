@@ -51,17 +51,17 @@ const Footer = () => {
   info.classList.add("info");
 
   const facebookIcon = document.createElement("img");
-  facebookIcon.setAttribute("src", "/src/assets/facebook-icon.svg");
+  facebookIcon.setAttribute("src", "./src/assets/facebook-icon.svg");
   facebookIcon.classList.add("social-media");
   info.appendChild(facebookIcon);
 
   const instagramIcon = document.createElement("img");
-  instagramIcon.setAttribute("src", "/src/assets/instagram-icon.svg");
+  instagramIcon.setAttribute("src", "./src/assets/instagram-icon.svg");
   instagramIcon.classList.add("social-media");
   info.appendChild(instagramIcon);
 
   const emailIcon = document.createElement("img");
-  emailIcon.setAttribute("src", "/src/assets/email-icon.svg");
+  emailIcon.setAttribute("src", "./src/assets/email-icon.svg");
   emailIcon.classList.add("social-media");
   info.appendChild(emailIcon);
 
@@ -85,7 +85,7 @@ const Footer = () => {
   credits.appendChild(madeBy);
 
   const githubIcon = document.createElement("img");
-  githubIcon.setAttribute("src", "/src/assets/github.svg");
+  githubIcon.setAttribute("src", "./src/assets/github.svg");
   githubIcon.classList.add("github-icon");
   credits.appendChild(githubIcon);
 
