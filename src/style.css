@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   margin: 0;
@@ -7,124 +8,200 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    background: #FCFAF6;
+  display: flex;
+  justify-content: center;
+  background: rgb(250, 250, 250);
 }
 
 #content {
-    width: 98%;
-    height: 100vh;
+  width: 98%;
+  height: 100vh;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin: 20px;
 }
 
 header .title {
-    font-family: 'Courgette', cursive;
-    font-size: 30px;
-    color: #ec7343;
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  color: #ec7343;
 }
 
 header .navBar {
-    width: 250px;
-    margin-right: 30px;
+  width: 250px;
+  margin-right: 30px;
 }
 
-.navBar .tabs{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navBar .tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navBar .tabs .tab{
-    list-style: none;
+.navBar .tabs .tab {
+  list-style: none;
 }
 
 .tab .btn {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #566270;
-    background: none;
-    border: none;
-    cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #566270;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .tab .btn:hover {
-    color: #bb5730;
+  color: #bb5730;
+}
+
+.home {
+  width: 100%;
+  height: 81.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-bg {
+  width: 80%;
+  height: 100%;
+  background: url('./assets/bread.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 1px 10px -6px rgba(59, 59, 59, 0.75);
+}
+
+.subtitle {
+  width: 240px;
+  height: 100px;
+  position: absolute;
+  top: 110px;
+  left: 450px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #e7b613;
+  text-align: center;
+}
+
+.menu {
+  width: 70%;
+  height: 81.3vh;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  align-content: center;
+  justify-items: center;
+}
+
+.menu .food {
+  width: 250px;
+  height: 230px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 1px 10px -6px rgba(59, 59, 59, 0.75);
+  
+}
+
+.menu .food-image {
+  width: 150px;
+  height: 140px;
+}
+
+.menu .food-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #566270;
+}
+
+.menu .food-price {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  color: #ec7343;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 98%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #e67041;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: #566270;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e67041;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #566270;
 }
 
 footer .info {
-    width: 430px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 18px;
+  width: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 18px;
 }
 
-.info .social-media{
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    margin: 2px;
-    opacity: 80%;
-    cursor: pointer;
+.info .social-media {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  opacity: 80%;
+  cursor: pointer;
 }
 
 .info .social-media:hover {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .info .title-2 {
-    font-family: 'Courgette', cursive;
-    font-size: 16px;
-    margin-bottom: 4px;
-    color: #ec7343;
+  font-family: "Courgette", cursive;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #ec7343;
 }
 
 footer .credits {
-    width: 230px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }
 
-.credits .made-by{
-    margin-right: 7px;
+.credits .made-by {
+  margin-right: 7px;
 }
 
 .credits .github-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 3px;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
 }
 
 .credits a {
-    color: #ec7343;
-    text-decoration: none;
+  color: #ec7343;
+  text-decoration: none;
 }
 
 .credits a:hover {
-    color: #c76038;
+  color: #c76038;
+}
+
+.active {
+  border: 1px solid black;
 }
