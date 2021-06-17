@@ -2,6 +2,7 @@ import "./style.css";
 import { Header, Footer } from "./components/base.js";
 import { Home } from "./components/home.js";
 import { Menu } from "./components/menu.js";
+import { Contact } from "./components/contact.js";
 
 const content = document.querySelector("#content");
 
@@ -21,5 +22,8 @@ window.addEventListener("click", (e) => {
   } else if (tab.classList.contains("menuBtn")) {
     content.innerHTML = "";
     render(Menu());
+  } else if (tab.classList.contains("contactBtn")) {
+    content.innerHTML = "";
+    render(Contact());
   }
 });

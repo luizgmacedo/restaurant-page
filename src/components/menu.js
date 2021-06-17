@@ -1,6 +1,6 @@
 export const Menu = () => {
-  const main = document.createElement("main");
-  main.classList.add("menu");
+  const menu = document.createElement("main");
+  menu.classList.add("menu");
 
   const createItem = (image, name, price) => {
     const food = document.createElement("div");
@@ -22,7 +22,7 @@ export const Menu = () => {
     food.appendChild(foodName);
     food.appendChild(foodPrice);
 
-    main.appendChild(food);
+    menu.appendChild(food);
   };
 
   const items = [
@@ -42,5 +42,5 @@ export const Menu = () => {
     createItem(items[i].image, items[i].name, items[i].price);
   }
 
-  return main;
+  return menu;
 };
