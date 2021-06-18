@@ -1,3 +1,10 @@
+import baguette from '../assets/baguette.png';
+import eclair from '../assets/eclair.png';
+import muffin from '../assets/muffin.png';
+import applePie from '../assets/apple-pie.png';
+import angel from '../assets/angel.png';
+import coffe from '../assets/coffe.png';
+
 export const Menu = () => {
   const menu = document.createElement("main");
   menu.classList.add("menu");
@@ -26,16 +33,16 @@ export const Menu = () => {
   };
 
   const items = [
-    { image: "./src/assets/baguette.png", name: "Baguette", price: "$ 5.00" },
-    { image: "./src/assets/eclair.png", name: "Eclair", price: "$ 2.99" },
-    { image: "./src/assets/muffin.png", name: "Muffin", price: "$ 1.50" },
-    { image: "./src/assets/apple-pie.png", name: "Apple Pie", price: "$ 9.79" },
+    { image: baguette, name: "Baguette", price: "$ 5.00" },
+    { image: eclair, name: "Eclair", price: "$ 2.99" },
+    { image: muffin, name: "Muffin", price: "$ 1.50" },
+    { image: applePie, name: "Apple Pie", price: "$ 9.79" },
     {
-      image: "./src/assets/angel.png",
+      image: angel,
       name: "Chocolate Angel",
       price: "$ 4.49",
     },
-    { image: "./src/assets/coffe.png", name: "Coffe", price: "$ 3.79" },
+    { image: coffe, name: "Coffe", price: "$ 3.79" },
   ];
 
   for (let i = 0; i < items.length; i++) {

@@ -1,3 +1,8 @@
+import facebook from '../assets/facebook-icon.svg';
+import instagram from '../assets/instagram-icon.svg';
+import email from '../assets/email-icon.svg';
+import github from '../assets/github.svg';
+
 const Header = () => {
   const header = document.createElement("header");
 
@@ -51,17 +56,17 @@ const Footer = () => {
   info.classList.add("info");
 
   const facebookIcon = document.createElement("img");
-  facebookIcon.setAttribute("src", "./src/assets/facebook-icon.svg");
+  facebookIcon.setAttribute("src", facebook);
   facebookIcon.classList.add("social-media");
   info.appendChild(facebookIcon);
 
   const instagramIcon = document.createElement("img");
-  instagramIcon.setAttribute("src", "./src/assets/instagram-icon.svg");
+  instagramIcon.setAttribute("src", instagram);
   instagramIcon.classList.add("social-media");
   info.appendChild(instagramIcon);
 
   const emailIcon = document.createElement("img");
-  emailIcon.setAttribute("src", "./src/assets/email-icon.svg");
+  emailIcon.setAttribute("src", email);
   emailIcon.classList.add("social-media");
   info.appendChild(emailIcon);
 
@@ -85,7 +90,7 @@ const Footer = () => {
   credits.appendChild(madeBy);
 
   const githubIcon = document.createElement("img");
-  githubIcon.setAttribute("src", "./src/assets/github.svg");
+  githubIcon.setAttribute("src", github);
   githubIcon.classList.add("github-icon");
   credits.appendChild(githubIcon);
 
