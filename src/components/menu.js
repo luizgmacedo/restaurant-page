@@ -1,9 +1,9 @@
-import baguette from '../assets/baguette.png';
-import eclair from '../assets/eclair.png';
-import muffin from '../assets/muffin.png';
-import applePie from '../assets/apple-pie.png';
-import angel from '../assets/angel.png';
-import coffe from '../assets/coffe.png';
+import baguette from '/src/assets/baguette.png';
+import eclair from '/src/assets/eclair.png';
+import muffin from '/src/assets/muffin.png';
+import applePie from '/src/assets/apple-pie.png';
+import angel from '/src/assets/angel.png';
+import coffe from '/src/assets/coffe.png';
 
 export const Menu = () => {
   const menu = document.createElement("main");

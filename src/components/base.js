@@ -1,7 +1,7 @@
-import facebook from '../assets/facebook-icon.svg';
-import instagram from '../assets/instagram-icon.svg';
-import email from '../assets/email-icon.svg';
-import github from '../assets/github.svg';
+import facebook from '/src/assets/facebook-icon.svg';
+import instagram from '/src/assets/instagram-icon.svg';
+import email from '/src/assets/email-icon.svg';
+import github from '/src/assets/github.svg';
 
 const Header = () => {
   const header = document.createElement("header");
